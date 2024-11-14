@@ -3,14 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Unlock&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
     <script src="./scripts/main.js" defer></script>
     <title>Chromakopia</title>
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <h1>Ola</h1>
-    <img src="./images/backend.png" alt="">
+    <header class="hero">
+        <div class="container" >
+            <img class="hero__logo" data-aos="fade-right" src="./images/cromakopia.png" alt="EBAC">
+            <p class="hero__text">
+                Kaseya Center
+                601 Biscayne Blvd
+                Miami, FL 33132
+                <p class="hero__text">
+                    <span id="contador"></span>
+                </p>  
+            </p>
+            <div class="infos-bar" data-aos="fade-left">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>LOCATION</b>
+                        1000 Vin Scully Ave
+                        Los Angeles, CA 90012
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>WHEN</b>
+                        Nov 16 - 17, 2024
+                        7:00 PM PST
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>PRICE</b>
+                        Starting at $662                        
+                        SERVICE FEES INCLUDED PRICE
+                    </li>   
+                </ul>
+                <a href="https://www.campfloggnaw.com" class="button button--primary">
+                    Tickets
+                </a>
+            </div>            
+        </div>
+    </header>
+    <section class="event">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Chromakopia</h2>
+                <p class="event__details__description">Released on October 28, 2024, dives into themes of personal reflection and transformation. This album stands out not only for its eclectic sound—blending elements from hip-hop, R&B, and jazz—but also for its deeply introspective lyrics. Tyler addresses past traumas, family dynamics, and societal issues with raw honesty, particularly in tracks like “Like Him,” where he contemplates his relationship with his estranged father, and “I Killed You,” which explores themes of self-acceptance and racial identity through innovative production choices. The album also features vibrant collaborations with artists like GloRilla and Sexyy Red, adding energy and variety to Tyler's reflective tracks, while other songs revisit his brash style from Cherry Bomb. Critics have praised Chromakopia for its blend of vulnerability and bravado, noting its complex narrative and sound as Tyler's boldest exploration of identity yet</p>
+            </div> 
+            <img class="event__image" data-aos="flip-right" src="./images/18543339.webp" alt="Tyler">   
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

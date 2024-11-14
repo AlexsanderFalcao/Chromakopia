@@ -1,0 +1,48 @@
+.event {
+    background-color: black ;
+    background-image: linear-gradient(190deg,black,#00843d);
+    .container {
+        display: flex;
+        align-items: center; /* Centraliza a imagem em altura */
+        flex-wrap: wrap; /* Permite que o layout se ajuste em telas menores */
+        padding: 20px;
+        gap: 20px; /* Adiciona espaço entre o texto e a imagem */
+    }
+
+    &__image {
+        max-width: 360px;
+        flex-shrink: 0; /* Impede que a imagem encolha */
+    }
+
+    &__details {
+        max-width: 600px;
+        flex: 1;
+        margin-right: 40px;
+
+        &__title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        &__description {
+            line-height: 1.6; /* Ajusta o espaçamento entre linhas para melhor leitura */
+        }
+    }
+
+    @media (max-width: 640px) {
+        .container {
+            display: block;
+        }
+
+        &__image{
+            width: 100%;
+        }
+
+        &__details {
+            margin-right: 0;
+            margin-bottom: 16px;
+        }
+    }
+    
+}
