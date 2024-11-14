@@ -3,21 +3,27 @@
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
+    display: inline-block; /* Ensures the button behaves like a block-level element */
     text-align: center;
-
+    border-radius: 8px; /* Makes the corners rounded */
+    
     &--primary {
-        color: black;
-        background-color: #00843d;
+        color: white; /* Text color */
+        background-color: #00843d; /* Button background color */
         
         @media (max-width: 640px) {
             display: flex;
             width: 100%;
-            align-items: center;
+            justify-content: center; /* Centers the text */
+            align-items: center; /* Ensures the text is vertically centered */
+            text-align: center; /* Ensures text remains centered */
         }
 
         @media (max-width: 1024px) {
             display: flex;
-            align-items: center;
+            justify-content: center; /* Centers the text */
+            align-items: center; /* Ensures the text is vertically centered */
+            text-align: center; /* Ensures text remains centered */
         }
     }
 }
